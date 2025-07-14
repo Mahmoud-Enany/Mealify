@@ -1,0 +1,710 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+img {
+    width: 100%;
+    display: block;
+}
+
+.container {
+    width: 85%;
+    margin: auto;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+.nav {
+    background-color: #eee;
+    height: 12vh;
+    padding: 5px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999999;
+    overflow: auto;
+}
+
+.nav .container {
+    padding-top: 25px;
+    /* background-color: beige; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav .container .navpt1 {
+    font-family: "Inter", sans-serif;
+    margin-bottom: 60px;
+}
+
+
+.navdot {
+    color: red;
+}
+
+.container .navpt2 a {
+    color: #7f7f90;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.container .navpt2 {
+    /* background-color: turquoise; */
+    display: flex;
+    width: 40%;
+    font-weight: 600;
+    justify-content: space-evenly;
+    position: relative;
+    right: 300px;
+}
+
+.container h1 .n {
+    position: relative;
+    right: 14px;
+}
+
+.home {
+    background-color: #eee;
+    width: 100%;
+    height: 100vh;
+}
+
+.header-content {
+    padding-top: 70px;
+    width: 40%;
+}
+
+.header-content h2 {
+    font-family: "Amatic SC";
+    color: #37373f;
+    font-size: 60px;
+}
+
+.header-content p {
+    line-height: 1.6;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 20px;
+    color: #4f4f5a;
+}
+
+.home-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    column-gap: 40px;
+}
+
+.bookbut {
+    padding: 12px 25px;
+    font-size: 17px;
+    background-color: hsl(0, 84%, 44%);
+    border-radius: 0px 100vh 100vh;
+    color: white;
+    transition: all 0.5s;
+}
+
+.bookbut:hover {
+    background-color: hsl(0, 84%, calc(44% + 5%));
+    color: hsl(0, 0%, 100%);
+}
+
+.vidbut {
+    font-size: 17px;
+    font-weight: 600px;
+}
+
+.home .container {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 100px;
+}
+
+.header-image {
+    margin-top: 15px;
+    width: 530px;
+    filter: drop-shadow(4px 4px 9px #000a);
+    transition: all 0.3s;
+}
+
+/* .header-image:hover {
+    transform: rotate(45deg) translateX(10px);
+} */
+
+.header-image:hover {
+    animation-name: plateshake;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes plateshake {
+    0% {
+        transform: rotate(2deg) translate(4px);
+    }
+
+    10% {
+        transform: rotate(-2deg) translate(-4px);
+
+    }
+
+    20% {
+        transform: rotate(2deg) translate(4px);
+    }
+
+    30% {
+        transform: rotate(-2deg) translate(-4px);
+    }
+
+    40% {
+        transform: rotate(2deg) translate(4px);
+    }
+
+    50% {
+        transform: rotate(-2deg) translate(-4px);
+
+    }
+
+    60% {
+        transform: rotate(2deg) translate(4px);
+
+    }
+
+    70% {
+        transform: rotate(-2deg) translate(-4px);
+
+    }
+
+    80% {
+        transform: rotate(2deg) translate(4px);
+
+    }
+
+    90% {
+        transform: rotate(-2deg) translate(-4px);
+
+    }
+
+    100% {
+        transform: rotate(2deg) translate(4px);
+
+    }
+}
+
+.chefs {
+    /* background-color: tomato; */
+    width: 100%;
+    height: 100vh;
+}
+
+.chefs-text {
+    /* background-color: teal; */
+    text-align: center;
+    padding-top: 25px;
+    padding-bottom: 0px;
+}
+
+.chefsbio {
+    /* background-color: chocolate; */
+    padding-top: 10px;
+}
+
+.chefs-text h2 {
+    color: #7f7f90;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.chefs-text p {
+    font-size: 50px;
+    font-family: "Amatic SC";
+}
+
+.chefs-text span {
+    color: hsl(0, 84%, 44%);
+}
+
+.chefsbio {
+    display: flex;
+}
+
+.chefsbio .bio img:before {
+    content: "";
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    background-image: url(./../images-mealify/images/textured-metal-background.jpg);
+    background-repeat: repeat-x;
+    width: 100%;
+    height: 60px;
+}
+
+.bio {
+    padding-inline: 20px;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.inner {
+    /* background-color: aliceblue; */
+    text-align: center;
+    transition: all 0.5s;
+}
+
+.chef1-info {
+    padding: 25px;
+}
+
+.chef1-info h3 {
+    font-family: "Inter";
+    font-weight: bold;
+}
+
+.chef1-info span {
+    font-size: 17px;
+    color: #7f7f90;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+.chef1-info p {
+    font-size: 17px;
+    font-style: italic;
+    color: #7f7f90;
+}
+
+.inner:hover {
+    transform: scale(1.1);
+}
+
+/* .bio:hover ul {
+    transform: translate(0%);
+} */
+
+/* .bio .socialapps {
+    background-color: black;
+    transform: translateX(120%);
+} */
+
+/* .bio .socialapps i {
+    padding: 10px 5px;
+    color: #37373f66;
+    transition: color 0.4s;
+}
+
+.sa {
+    font-weight: 500;
+    font-family: "Font Awesome 6 Brands";
+}
+
+.twi:before {
+    content: "\f099";
+}
+
+.bio .socialapps{
+    transform: translateX(400px);
+} */
+
+.gallery-head h2 {
+    color: #7f7f90;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.gallery-head p {
+    font-size: 50px;
+    font-family: "Amatic SC";
+}
+
+.gallery-head span {
+    color: hsl(0, 84%, 44%);
+}
+
+.gallery {
+    background-color: #eee;
+    height: fit-content;
+}
+
+.gallery-head {
+    text-align: center;
+    padding-bottom: 20px;
+    padding-top: 40px;
+
+}
+
+.gallery-gr {
+    display: grid;
+    gap: 20px 20px;
+    grid-template-areas:
+        "pizza beafsteaks Burger"
+        "pizza beafsteaks Burger"
+        "pizza beafsteaks Burger"
+        "Levitationpizza beafsteaks CrispyFriedChicken"
+        "Levitationpizza beafsteaks CrispyFriedChicken"
+        "Levitationpizza beafsteaks CrispyFriedChicken"
+        "Levitationpizza beafsteaks Lyulyakebab"
+        "Levitationpizza Frittata Lyulyakebab"
+        ". Frittata Lyulyakebab"
+        ". Frittata Lyulyakebab"
+        ". Frittata .";
+}
+
+.pizza {
+    grid-area: pizza;
+}
+
+.beafsteaks {
+    grid-area: beafsteaks;
+}
+
+.Burger {
+    grid-area: Burger;
+}
+
+.CrispyFriedChicken {
+    grid-area: CrispyFriedChicken;
+}
+
+.Lyulyakebab {
+    grid-area: Lyulyakebab;
+}
+
+.Frittata {
+    grid-area: Frittata;
+}
+
+.Levitationpizza {
+    grid-area: Levitationpizza;
+}
+
+.contact {
+    height: 100vh;
+    background-color: #eee;
+}
+
+.contact-head {
+    /* background-color: tomato; */
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.contact-head h2 {
+    color: #7f7f90;
+    font-weight: 600;
+    font-size: 25px;
+}
+
+.contact-head p {
+    font-size: 50px;
+    font-family: "Amatic SC";
+}
+
+.contact-head span {
+    color: hsl(0, 84%, 44%);
+}
+
+/* .thelist {
+    background-color: aquamarine;
+}
+ */
+
+.contact {
+    padding: 100px 0;
+    /* height: 100vh; */
+
+}
+
+.contact iframe {
+    width: 100%;
+    height: 350px;
+}
+
+.contact .contact-info {
+    margin: 25px 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.contact .contact-info>div {
+    width: calc(50% - 7.5px);
+    display: flex;
+    align-items: center;
+    padding: 25px;
+    background-color: hsl(0,
+            0%,
+            calc(100% - 4%));
+}
+
+.contact .contact-info>div h3 {
+    color: #7d7d7d;
+    font-size: 20px;
+    font-weight: 700;
+    margin: 0 0 5px 0;
+}
+
+.contact .contact-info .info-icon {
+    min-width: 50px;
+    min-height: 50px;
+    background-color: hsl(0,
+    84%,
+    44%);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.contact .contact-info .info-icon i {
+    color: hsl(0,
+    0%,
+    100%);
+    font-size: 18px;
+}
+
+.contact .contact-form {
+    background-color: hsl(0,
+    0%,
+    100%);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 0 30px #00000014;
+    gap: 15px;
+}
+
+.contact .contact-form>* {
+    width: 100%;
+}
+
+.contact .contact-form :is(input, textarea) {
+    padding: 15px;
+    font-family: inherit;
+    line-height: 1.5;
+    border: 2px solid hsl(0,
+            calc(0% + 10%),
+            calc(100% - 10%));
+    color: #212529;
+    transition: border-color 600ms;
+}
+
+.contact .contact-form :is(input, textarea):focus {
+    outline: none;
+    border-color: hsl(0,
+            84%,
+            44%);
+}
+
+.contact .contact-form .form-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.contact .form-row input {
+    width: calc(50% - 7.5px);
+}
+
+.contact .contact-form textarea {
+    min-height: 150px;
+    max-height: 300px;
+    resize: vertical;
+}
+
+.contact .contact-form button[type="submit"] {
+    padding: 12px 40px;
+    margin-top: 25px;
+    width: fit-content;
+    font-family: inherit;
+    border: 20px;
+    border-radius: 100vh 100vh 100vh;
+}
+
+/* footer causes some problem at all secs , i have tried several  solutions but none of them were vaild , that's why it is commented */
+
+/* 
+.footer{
+    width: fit-content;
+    background-image: linear-gradient(#0009, #0009),
+    url(./../images-mealify/images/textured-metal-background.jpg);
+    color: #fff;
+    box-shadow: 0px -1px 5px #0007;
+    background-size: contain;
+}
+.container{
+    width: 87%;
+    margin: 20px auto;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-inline: 5px;
+} 
+.five-common {
+    width: 23%;
+}
+.five-common-2{
+    width: 50%;
+}
+.five-one-img img{
+    width: 2.5rem;
+    height: 2.5rem;
+}
+
+.five-one-img{
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+.five-one-img span{
+    color: hsl(0,
+    84%,
+    44%);
+} 
+.five-one-img h2{
+    font-size: 30px;
+}
+
+.five-one h3{
+    text-align: center;
+    padding: 0.625rem;
+    border-bottom: 2px solid #ddd6;
+    margin-bottom: 0.625rem;
+}
+.container-fivth a{
+    text-decoration: none;
+    color: hsl(0,
+    0%,
+    100%);
+}
+.container-fivth ul{
+    list-style: none;
+}
+.five-one ul{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+.five-one a{
+    font-size: 1.5rem;
+}
+
+.five-two p{
+    margin-block: 0.625rem;
+    line-height: 1.5rem;
+}
+.five-two-input{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+.five-two-input input{
+    flex-grow: 1;
+    padding: 0.625rem;
+
+}
+.five-two-input button{
+    border-radius: 0;
+    padding: 0.625rem;
+    min-width: 6.875rem;
+    background-color: hsl(0,
+    84%,
+    44%);
+    font-size: 0.9375rem;
+    border: 0.125rem solid transparent;
+    color: lightgray;
+}
+
+
+.five-two h3{
+    font-family: "Inter", sans-serif;
+    margin-bottom: 10px;
+}
+.five-two ul{
+    display: grid; 
+  grid-template-columns: 1fr 1fr; 
+  grid-template-rows: 1fr 1fr 1fr; 
+  gap: 5px 5px; 
+  grid-template-areas: 
+    "first second"
+    "third fourth"
+    "fifth sixth"; 
+}
+.five-two ul li{
+    padding: 5px;
+    min-width: 50%;
+    position: relative;
+    transition: all 0.3s;
+}
+.five-two ul li a{
+    margin-left: 15px;
+    text-transform: capitalize;
+}
+.five-two ul li:hover{
+    background-color: #222;
+    transform: translateX(10px);
+}
+.five-two ul li:first-child{
+    grid-area: first;
+}
+.five-two ul li:nth-child(2){
+    grid-area: second;
+}
+.five-two ul li:nth-child(3){
+    grid-area: third;
+}
+.five-two ul li:nth-child(4){
+    grid-area: fourth;
+}
+.five-two ul li:nth-child(5){
+    grid-area: fifth;
+}
+.five-two ul li:nth-child(6){
+    grid-area: sixth;
+}
+
+.five-two ul li::before{
+    content: "\276F"; Unicode character for the arrow (❯)
+  position: absolute;
+  left: 0;
+  color: white;
+}
+.five-three h3{
+    margin-bottom: 10px;
+}
+.five-three ul li{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.five-three ul li i{
+    width: 2.5rem;
+    height: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: hsl(0,
+    84%,
+    44%);
+    font-size: 1.375rem;
+    cursor: pointer;
+} */
